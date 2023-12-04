@@ -33,3 +33,13 @@
 .spotify_top_nav_sign_up{
  padding-top: 15px;
 }
+.spotify_top_nav_focus_title{
+    flex-basis: 753px;
+    margin-left: -200px;
+    
+}
+.spotify_top_nav_login:hover{
+    cursor: pointer;
+    color: rgb(15, 187, 15);
+    background-color: black;
+}

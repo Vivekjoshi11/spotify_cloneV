@@ -11,6 +11,7 @@ import { LogInComponent } from './pages/log-in/log-in.component';
 import { ButtonComponent } from './components/button/button.component';
 import { SongCardComponent } from './components/song-card/song-card.component';
 import { TopNavComponent } from './components/top-nav/top-nav.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { TopNavComponent } from './components/top-nav/top-nav.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
