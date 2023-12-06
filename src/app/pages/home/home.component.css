@@ -24,9 +24,10 @@
     overflow-x: auto;
     overflow-y: auto;
     /* height: ; */
-    position: absolute;
+    position: fixed;
    
 }
+
 #song_card_item{
     min-width: 185px;
 }
@@ -50,4 +51,30 @@
  .spotify_home-container_playlist_side-bar{
     padding-left: 0px;
     padding-right: 0px;
+ }
+ #playlist{
+    background-color: #2f2d2d;
+    border-radius: 25px;
+    height: 160px;
+    text-align: center;
+    padding-top: 20px;
+ }
+ #playlist_header{
+    color: white;
+    text-align: left;
+ }
+ #playlist_btn{
+  border-radius: 25px;
+  text-decoration: double;
+  box-shadow: #191919;
+  font-size: medium;
+ }
+ .extra_info{
+    width: 200px;
+    color: white;
+    font-size: small;
+    text-align: left;
+ }
+ .footer_section{
+    color: white;
  }
