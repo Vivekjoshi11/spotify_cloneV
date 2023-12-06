@@ -1,7 +1,18 @@
+<header>
 <div class="spotify_top_nav">
-    <div class="spotify_top_nav_focus_title">Focus</div>
+    <div class="spotify_top-nav_focus_title">
+        <ul class="spotify_top_nav_auth"></ul>
+    </div>
+    <div class="spotify_top_nav_focus_title">
+        <li *ngIf="isSearchFiledVisible">
+        <input class="search_playlist" 
+        type="search"
+        placeholder="what doy you want to search?" />
+    </li>
+    </div>
     <div class="spotify_top_nav_auth">
         <div class="spotify_top_nav_sign_up">Sign up</div>
         <div class="spotify_top_nav_login" (click)="onNavigateToLogin()">Log in</div>
     </div>
 </div>
+</header>

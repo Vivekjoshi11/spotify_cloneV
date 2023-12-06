@@ -6,16 +6,16 @@
             class="m-3 text-left"               
                src="assets/spotify_logo_white.png" alt="spotify_logo_light_logo">
         </div>
-        <div class="spotify_home-container_side-bar_item">
+        <div class="spotify_home-container_side-bar_item" (click)="onNavigation('home')">
            <a>Home</a>
         </div>
-        <div class="spotify_home-container_side-bar_item">
+        <div class="spotify_home-container_side-bar_item" (click)="onNavigateToSearch('search')" >
             <a>Search</a>
          </div>
-         <div class="spotify_home-container_side-bar_item">
+         <div class="spotify_home-container_side-bar_item" (click)="onNavigation('Your_library')">
             <a>Your_library</a>
          </div>
-         <div class="spotify_home-container_side-bar_item">
+         <div class="spotify_home-container_side-bar_item" (click)="onNavigation('playlist')">
             <a>Create_play_list</a>
          </div>
         
@@ -23,7 +23,7 @@
     <div class="spotify_home-container_playlist_side-bar col-10">
         <app-top-nav></app-top-nav>
         <div [style.paddingTop]="'48px'" class ="mt-5 container">
-         <h4 [style.color]="'white'" [style.padding]="'10px'">Focus</h4>
+         <h4 [style.color]="'white'" [style.padding]="'10px'">Play lists</h4>
          <div class="playlist_card_collections">
             <div class="song_card_item" *ngFor= "let sc of songCards">
          <app-song-card>
@@ -35,9 +35,9 @@
       </div>
    </div>
    <div [style.paddingTop]="'250px'" class="mt-5 container-fluid">
-   <h4 [style.color]="'white'" [style.padding]="'10px'" >
+   <!-- <h4 [style.color]="'white'" [style.padding]="'10px'" >
    spotify Playlists
-   </h4>
+   </h4> -->
 
    <!-- <div id=""song_card_item *ngFor="let sc of songCards">
    <app-song-card>
@@ -46,14 +46,18 @@
       [description]="sc.description"
    </app-song-card>
    </div> -->
-   <div class="playlist_card_collections">
+   <!-- <div class="playlist_card_collections">
       <div class="song_card_item" *ngFor= "let sc of songCards">
    <app-song-card>
       [playlistThumbnail]="sc.thumbnail"
       [title]="sc.title"
       [description]="sc.description"
+      
    </app-song-card>
-  </div>
+  </div> -->
+<!-- </div> -->
+<div class="footer_section">
+   <p>company</p>
 </div>
 </div>
 

@@ -34,12 +34,35 @@
  padding-top: 15px;
 }
 .spotify_top_nav_focus_title{
-    flex-basis: 753px;
-    margin-left: -200px;
+    margin-left: 10px;
     
 }
 .spotify_top_nav_login:hover{
     cursor: pointer;
     color: rgb(15, 187, 15);
     background-color: black;
+}
+.forward_btn,
+.backward_btn{
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    width: 48px;
+    height: 45px;
+    box-shadow: rgba(0, 0, 0, 0.24);
+}
+input.search_playlist{
+    border: none;
+    width: 250px;
+    border-radius: 20px;
+    height: 40px;
+    padding: 14px;
+    font-size: 14px;
+}
+input.search_playlist::placeholder{
+
+    color: grey;
+    font-weight: 500;
+    letter-spacing: 0.5px;
 }

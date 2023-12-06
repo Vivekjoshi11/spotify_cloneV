@@ -6,6 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./song-card.component.css']
 })
 export class SongCardComponent implements OnInit {
+[x: string]: any;
   @Input() public plsylidtthumbnail!: string;
   @Input() public title!: string;
   @Input() public description!: string;
@@ -14,4 +15,5 @@ export class SongCardComponent implements OnInit {
   ngOnInit(): void {
       
   }
+  
 }

@@ -19,10 +19,10 @@
 .playlist_card_collections{
     background-color: #1e1e1e;
     display: flex;
-    gap: 20px;
+    gap: 30px;
     max-width: 1500px;
-    /* overflow-x: auto; */
-    /* overflow-y: auto; */
+    overflow-x: auto;
+    overflow-y: auto;
     /* height: ; */
     position: absolute;
    

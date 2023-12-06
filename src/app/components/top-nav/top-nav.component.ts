@@ -8,9 +8,17 @@ import { Router } from '@angular/router';
 })
 export class TopNavComponent {
  
+  public isSearchFiledVisible: boolean = false;
+  sb: any;
   constructor(private router: Router){}
   ngOnInit(): void{
-
+      this.sb.isSearchFiledVisible.subscribe((status: any)=>{
+        this.isSearchFiledVisible = true;
+      })
+  }
+  onNavigatetoSearch(){
+    console.log('search');
+    this.isSearchFiledVisible = true;
   }
   onNavigateToLogin(){
      this.router.navigate(['/','login']);
