@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
 import { SearchBarService } from 'src/app/services/searchbar.services';
-
+import { Route } from '@angular/router';
+import { AppRoutingModule } from 'src/app/app-routing.module';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
+[x: string]: any;
 public songCards = [
   {
     thumbnail:
@@ -42,6 +44,7 @@ public songCards = [
   description: 'Relax and inculge with beautiful piano pices',
 },
 
+
 ];
 onNavigateToSearch: any;
 
@@ -55,6 +58,12 @@ onNavigation(pagename: string){
   else{
     this.sb.isSearchVisible.next(false);
   }
+  
+}
+onNavigateToYourLibray(){
+  // this['router'].navigate(['/','Your_library']);
+  window.location.href = '/Your_library';
+  
 }
   
 }

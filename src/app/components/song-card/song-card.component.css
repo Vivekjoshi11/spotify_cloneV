@@ -1,6 +1,6 @@
 .spotify_song-card{
     height: 250px;
-    width: 210px;
+    width: 225px;
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -24,7 +24,8 @@
     overflow-x: auto;
     overflow-y: auto;
     /* height: ; */
-    position: fixed;
+    position: static;
+    
    
 }
 
